@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap');
+
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    font-family: 'Poppins' , sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+li{
+    list-style: none;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.btn{
+    height: 2.5rem;
+    /* background:#ccc; */
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 5rem;
+    pad: 5px 15px;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Nav bar styling start */
+nav{
+    background-color: #0a2430;
+    color: #fff;
+    padding: 1rem 0;
+    min-height: 4.5rem;
+    border: 3px solid #4a94aa;
+}
+
+nav a{
+    text-transform: uppercase;
+}
+
+nav li{
+    float: left;
+    display: inline;
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+nav .branding{
+    float: left;
+}
+nav .branding a{
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-top: 0.8rem;
+}
+
+nav .branding a i{
+    margin-right: 0.5rem;
+    color: #4a94aa;
+}
+
+nav ul{
+    float: right;
+    margin-top: 0.8rem;
+}
+
+nav ul li a.active{
+    color: #4a94aa;
+    font-weight: 700;
+}
+
+nav ul li a:hover{
+    color: #4a94aa;
+    font-weight: 700;
+}
+
+/* Nav bar styling end */
+
+/*  about us styling start */
+
+.aboutus{
+    min-height: 31rem;
+    padding: 2rem 0;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.aboutus .container h1{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.aboutus .container p{
+    display: inline-block;
+    padding: 1rem 0;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.aboutus .container{
+    display: flex;
+    flex-direction: row;
+}
+
+.aboutus .container .card .back , .aboutus .container .left .back{
+    background: #0a2430;
+    color:#ccc;
+    padding: 1rem;
+    padding-bottom: 0;
+}
+
+.left i{
+    margin: 1rem;
+}
+
+.left a{
+    float: left;
+    display: inline;
+
+}
+
+.left a span{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.left p{
+    display: inline-block;
+}
+
+.left{
+    margin: 0 1.5rem 1.5rem 1.5rem;
+} 
+/* about us styling ends */
+
+footer{
+    padding: 1rem;
+    margin-top: 1rem;
+    color: #fff;
+    background-color: #0a2430;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* media query */
+
+@media(max-width:760px){
+    nav .branding, nav ul, nav ul li{
+        float: none;
+        text-align: center;
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .aboutus .container{
+        flex-direction: column;
+    }
+
+    .card p{
+        margin: 1rem;
+    }
+
+    .left{
+        margin:1rem 0rem 0rem 0rem;
+    }
+}
